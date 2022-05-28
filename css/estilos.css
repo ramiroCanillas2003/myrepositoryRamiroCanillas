@@ -1,5 +1,5 @@
     html{
-        background-color: rgb(0, 0, 0);
+        background-image: url(https://thumbs.dreamstime.com/b/vector-del-fondo-rgb-punto-televisi%C3%B3n-puntos-tono-medio-grunge-pigmento-de-cerca-dot-screen-blanco-y-negro-ilustraci%C3%B3n-112504141.jpg);
     }
     
     /*ESILOS INDEX*/ 
@@ -54,6 +54,7 @@
         font-size: 2.2em;
         text-align: center;
         font-family: cursive;
+        border-radius: 500px;
     }
 
     header .container{
@@ -276,12 +277,14 @@
     }
 
     footer p{
-        background-color: lightgray;
+        background-color: rgb(0, 0, 0);
         font-size: 1.5em;
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: white;
         height: 40px;
         align-items: center;
         text-align: center;
+        align-items: center;
     }
 
     /*ESTILOS ACERCA DE..*/
@@ -472,15 +475,82 @@
     li {
         list-style: none;
     }
+
     /*BARRA DE NAVEGACIÓN*/
+    .navbar {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 600;
+    }
+    
+    .navbar * {
+        box-sizing: border-box;
+        transition: all .35s ease;
+    }
+    
+    .navbar li {
+        display: inline-block;
+        list-style: outside none none;
+        margin: .5em 1em;
+        padding: 0;
+    }
+    
+    .navbar a {
+        padding: .5em .8em;
+        color: rgba(255,255,255,.5);
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    
+    .navbar a::before,
+    .navbar a::after {
+        content: '';
+        height: 14px;
+        width: 14px;
+        position: absolute;
+        transition: all .35s ease;
+        opacity: 0;
+    }
+    
+    .navbar a::before {
+        content: '';
+        right: 0;
+        top: 0;
+        border-top: 3px solid #89147d;
+        border-right: 3px solid #89147d;
+        transform: translate(-100%, 50%);
+    }
+    
+    .navbar a:after {
+        content: '';
+        left: 0;
+        bottom: 0;
+        border-bottom: 3px solid #640f41;
+        border-left: 3px solid #640f41;
+        transform: translate(100%, -50%)
+    }
+    
+    .navbar a:hover:before,
+    .navbar a:hover:after{
+        transform: translate(0,0);
+        opacity: 1;
+    }
+
+    .navbar a:hover {
+        color: violet;
+    }
+    
     .navbar {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 20px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         color: black;
     }
+
     .nav-links a {
         color: black;
     }
@@ -499,7 +569,7 @@
     }
 
     .menu li:hover {
-        background-color: lightgray;
+        background-color: rgb(0, 0, 0);
         border-radius: 5px;
         transition: 0.3s ease;
     }
@@ -532,7 +602,7 @@
     }
 
     .dropdown li:hover {
-        background-color: #3B91FE;
+        background-color: #ffffff;
     }
 
     .services:hover .dropdown {
@@ -551,6 +621,10 @@
         user-select: none;
     }
 
+
+
+
+    /*MEDIA QUERIES*/
     @media (max-width: 768px) {
 
     .titulo{
@@ -562,7 +636,7 @@
     .menu { 
         display:none;
         position: absolute;
-        background-color:violet;
+        background-color:rgb(255, 255, 255);
         right: 0;
         left: 0;
         text-align: center;
@@ -570,7 +644,7 @@
     }
     .menu li:hover {
         display: inline-block;
-        background-color:#52C0FE;
+        background-color:#000000;
         transition: 0.3s ease;
     }
     .menu li + li {
@@ -846,3 +920,4 @@
     }
     
 }
+
