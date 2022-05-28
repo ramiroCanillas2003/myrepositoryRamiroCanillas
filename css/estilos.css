@@ -1,0 +1,848 @@
+    html{
+        background-color: rgb(0, 0, 0);
+    }
+    
+    /*ESILOS INDEX*/ 
+        
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin: 0;
+    }
+
+    .titulo{
+        text-align: center;
+        font-size: 2.5em;
+        font-family: cursive;
+    }
+
+    h1{font-size: 3.5em;}
+    h2{font-size: 2.7em;}
+    h3{font-size: 2em;}
+    p{font-size: 1.25em;}
+    ul{list-style: none;}
+
+    button{
+        font-size: 1.25em;
+        font-weight: bold;
+        padding: 10px 30px;
+        border-radius: 5px;
+        border: 2px solid rgb(255, 255, 255);
+        box-shadow: 2px 2px 10px rgb(255, 178, 178);
+        color: white;
+        background-color: violet;
+    }
+
+    button:hover{
+        background-color: mediumvioletred;
+    }
+
+    .container{
+        max-width: 1400px;
+        margin: auto;
+    }
+
+    header{
+        background-color: black;
+        color: white;
+    }
+
+    header .logo{
+        margin: 0;
+        padding: 25px 30px;
+        font-weight: bold;
+        color: white;
+        font-size: 2.2em;
+        text-align: center;
+        font-family: cursive;
+    }
+
+    header .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    header a{
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+    header a:hover{
+        color: violet;
+    }
+
+    #hero{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 50vh;
+        background-position: center center;
+        background-image: url(https://blogs.ua.es/bloggergeek/files/2015/12/programacion-principiantes.jpg);
+        background-size: cover;
+    }
+
+    #hero h1{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 1000px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+    }
+    
+    .enlaceCoder{
+        position: absolute;
+        left: 95px;
+        color: yellow;
+        background-color: black;
+        border-radius: 20px;
+        padding: 1px;
+    }
+
+    #somos-proya{
+        margin-top: 0px;
+        background-color: black;
+        height: 650px;
+        text-align: center;
+        padding: 200px 12px;
+        background-image: url(https://academiapir.com/wp-content/uploads/2017/11/metodos-de-estudio.jpg);
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+
+    #somos-proya .donde{
+        text-align: left;
+        background-color: none;
+        width: 300px;
+        color: white;
+    }
+
+    .dondeParrafo{
+        width: 250px;
+        color: white;
+        text-align: left;
+    }
+
+    .dondeParrafo:hover{
+        background-color: #3B91FE;
+        
+    }
+
+    .donde:hover{
+        background-color: violet;
+        text-transform: uppercase;
+    }
+
+    #nuestross-programas{
+        background-color: black;
+        text-align: center;
+    }
+
+    #nuestros-programas .container{
+        padding: 100px 0px;    
+    }
+
+    #nuestros-programas p{
+        display: none
+    }
+
+    #nuestros-programas h2{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        background-position: center center;
+        background-size: cover;
+        padding: 50px 0px;
+        margin: 30px;
+        border-radius: 15px;
+    }
+
+    #nuestros-programas{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgb(48, 48, 48);
+        color: white;
+    }
+
+    #nuestros-programasPrecios{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        padding: 15px;
+    }
+
+    #divPrincipal{
+        display: inline-flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    .precios{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .titulo-precios{
+        background-color: violet;
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        width: 260px;
+        position: relative;
+        left: 480px;
+    }
+
+    .enlacePresupuesto{
+        color: rgb(125, 179, 225);
+        text-decoration: solid;
+    }
+
+    .parrafoAparte{
+        color: violet;
+        text-decoration: dashed;
+    }
+
+    #nuestros-programasContacto{
+        background-color: rgb(255, 255, 255);
+        color: white;
+        margin: auto;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        background-color: black;
+    }
+
+    .titulo-contacto{
+        margin-top: 8px;
+        padding: 5px;
+        background-color: violet;
+        height: 60px;
+        color: white;
+        border-radius: 50px;
+    }
+
+    /*ICONO WHATSAPP*/
+    .float{
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:100;
+    }
+    .float:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color:#fff;
+    }
+    
+    .my-float{
+        margin-top:16px;
+    }
+
+    /*FOOTER*/
+
+    footer .imgPagina{
+        width: 100px;
+        height: 100px;
+        border-radius: 1000px;
+        margin: 10px;
+        position: relative;
+        left: 580px
+    }
+
+    footer p{
+        background-color: lightgray;
+        font-size: 1.5em;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*ESTILOS ACERCA DE..*/
+
+    #heroAcerca{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 50vh;
+        background-image: url(https://dinahosting.com/blog/cont/uploads/2018/06/lenguajes-de-programaci%C3%B3n-1-1.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+
+    #heroAcerca h1{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 1000px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+    }
+
+    #somos-proya-acerca{
+        margin-top: 0px;
+        background-color: black;
+        height: 650px;
+        text-align: center;
+        padding: 200px 12px;
+        background-image: url(https://parentesis.com/imagesPosts/coder00.jpg);
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+
+    #somos-proya-acerca .donde-acerca{
+        text-align: left;
+        background-color: none;
+        width: 300px;
+        color: white;
+    }
+
+    .dondeParrafo-acerca{
+        width: 250px;
+        color: white;
+        text-align: left;
+    }
+
+    .dondeParrafo-acerca:hover{
+        background-color: #3B91FE;
+        
+    }
+
+    .donde-acerca:hover{
+        background-color: violet;
+        text-transform: uppercase;
+    }
+
+    .imgCerti{
+        background-color: black;
+    }
+
+    .imgCertificado{
+        width: 650px;
+        height: 600px;
+        position: relative;
+        left: 304px;
+    }
+
+    #somos-proya-acercauno{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-image: url(https://www.solbyte.com/blog/wp-content/uploads/desarrollo-web-a-medida.png);
+        background-repeat: no-repeat;
+        background-position: center ;
+        color: black;
+        padding: 25px;
+        margin: 20px;
+    }
+
+    #div-primero{
+        color: black;
+        background-color: #000000;
+        width: 400px;
+        text-align: center;
+        border-radius: 50px;
+        padding: 50px;
+    }
+
+    #somos-proya-acercauno .donde-acercauno{
+        text-align: left;
+        background-color: none;
+        width: 300px;
+        color: rgb(255, 255, 255);
+    }
+
+    .dondeParrafo-acercauno{
+        width: 250px;
+        color: white;
+        text-align: left;
+    }
+    
+    .donde-acercados{
+        width: 250px;
+        color: white;
+        text-align: left;
+    }
+    
+    .donde-acercados:hover{
+        background-color: violet;
+        text-transform: uppercase;
+        width: 350px;
+    }
+
+    .tituloAcerca{
+        text-align: center;
+        font-size: 2.5em;
+        font-family: cursive;
+    }
+
+
+
+    /*ESTILOS PRESUPUESTO*/
+
+    #hero-presupuesto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 50vh;
+        background-image: url(https://p-card.com/wp-content/uploads/2020/08/Presupuesto-empresarial.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    }
+
+    .h1-presupuesto{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 1000px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+    }
+
+    #div-presupuesto{
+        background-color: black;
+        color: white;
+        text-align: center;
+    }
+
+    .titulo-contacto{
+        background-color: violet;
+        color: #FFF;
+        font-size: 2em;
+        width: 600px;
+        position: relative;
+        height: auto;
+        left: 330px;
+        padding: 5px;
+    }
+
+    .email{
+        color: yellow;
+        font-size: 1em;
+        margin: 5px;
+    }
+
+    /* MENU NAVEGACION */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    a {
+        text-decoration: none;
+    }
+    li {
+        list-style: none;
+    }
+    /*BARRA DE NAVEGACIÓN*/
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        background-color: white;
+        color: black;
+    }
+    .nav-links a {
+        color: black;
+    }
+
+    /* LOGO */
+    .logo {
+        border-radius: 600px;
+        width: 200px;
+    }
+
+    /* NAVBAR MENU */
+    .menu {
+        display: flex;
+        gap: 1em;
+        font-size: 18px;
+    }
+
+    .menu li:hover {
+        background-color: lightgray;
+        border-radius: 5px;
+        transition: 0.3s ease;
+    }
+
+    .menu li {
+        padding: 5px 14px;
+    }
+    /* DROPDOWN MENU */
+    .services {
+        position: relative; 
+    }
+
+    .dropdown {
+        background-color: violet;
+        padding: 1em 0;
+        position: absolute; /*WITH RESPECT TO PARENT*/
+        display: none;
+        border-radius: 8px;
+        top: 35px;
+    }
+
+    .dropdown li + li {
+        margin-top: 10px;
+    }
+
+    .dropdown li {
+        padding: 0.5em 1em;
+        width: 8em;
+        text-align: center;
+    }
+
+    .dropdown li:hover {
+        background-color: #3B91FE;
+    }
+
+    .services:hover .dropdown {
+        display: block;
+    }
+
+    /*RESPONSIVE NAVBAR MENU STARTS*/
+    /* CHECKBOX HACK */
+    input[type=checkbox]{
+        display: none;
+    } 
+    /*HAMBURGER MENU*/
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        user-select: none;
+    }
+
+    @media (max-width: 768px) {
+
+    .titulo{
+        text-align: center;
+        font-size: 2em;
+        font-family: cursive;
+    }
+
+    .menu { 
+        display:none;
+        position: absolute;
+        background-color:violet;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+    }
+    .menu li:hover {
+        display: inline-block;
+        background-color:#52C0FE;
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    .dropdown li:hover {
+        background-color: #4c9e9e;
+    }
+
+    h1{font-size: 2em;}
+
+    #hero h1{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 700px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+    }
+
+    .titulo-precios{
+        background-color: violet;
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        width: 260px;
+        position: relative;
+        left: 232px;
+    }
+    
+    footer .imgPagina{
+        width: 100px;
+        height: 100px;
+        border-radius: 1000px;
+        margin: 10px;
+        position: relative;
+        left: 325px
+    }
+
+    .logo{
+        border-radius: 600px;
+        width: 150px;
+    }
+
+    /*PRESUPUESTO*/
+
+    .h1-presupuesto{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 720px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+    }
+
+    .titulo-contacto{
+        background-color: violet;
+        color: #FFF;
+        font-size: 2em;
+        width: 600px;
+        position: relative;
+        height: auto;
+        left: 80px;
+        padding: 5px;
+    }
+
+    /*ACERCA DE NOSOTROS*/
+
+    .tituloAcerca{
+        text-align: center;
+        font-size: 2em;
+        font-family: cursive;
+    }
+
+    #heroAcerca .h1-acerca{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 720px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+    }
+
+    #somos-proya-acerca{
+        margin-top: 0px;
+        background-color: black;
+        height: 650px;
+        text-align: center;
+        padding: 200px 12px;
+        background-image: url(https://k46.kn3.net/taringa/9/D/4/2/4/9/luismi222222/337.png);
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+
+    .imgCertificado{
+        margin-top: 20px;
+        width: 450px;
+        height: 400px;
+        position: relative;
+        left: 165px;
+    }
+
+    #somos-proya-acercauno{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        background-image: url(https://www.solbyte.com/blog/wp-content/uploads/desarrollo-web-a-medida.png);
+        background-repeat: no-repeat;
+        background-position: center ;
+        color: black;
+        padding: 25px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .titulo{
+        text-align: center;
+        font-size: 1.5em;
+        font-family: cursive;
+    }
+
+    h1{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 320px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+        font-size: 1.5em;
+    }
+
+    #hero h1{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 350px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+    }
+
+    .titulo-precios{
+        background-color: violet;
+        color: rgb(255, 255, 255);
+        border-radius: 50px;
+        width: 260px;
+        position: relative;
+        left: 42px;
+    }
+    
+    footer .imgPagina{
+        width: 100px;
+        height: 100px;
+        border-radius: 1000px;
+        margin: 10px;
+        position: relative;
+        left: 130px
+    }
+
+    .logo {
+        border-radius: 600px;
+        width: 100px;
+    }
+
+    .h1-presupuesto{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 380px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+        padding: 5px
+    }
+
+    /*FOOTER*/
+
+    footer p{
+        background-color: lightgray;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*PRESUPUESTO*/
+
+    .h1-presupuesto{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 320px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+        font-size: 1.5em;
+    }
+
+    .titulo-contacto{
+        background-color: violet;
+        color: #FFF;
+        font-size: 2em;
+        width: 320px;
+        position: relative;
+        height: auto;
+        left: 25px;
+        padding: 5px;
+        font-size: 1.5em;
+    }
+
+    /*ACERCA DE NOSOTROS*/
+
+    .tituloAcerca{
+        text-align: center;
+        font-size: 1.5em;
+        font-family: cursive;
+    }
+
+    #heroAcerca .h1-acerca{
+        color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
+        width: 320px;
+        border: black;
+        border-radius: 80px;
+        margin: 6px;
+        font-size: 1.5em;
+    }
+
+    #somos-proya-acerca{
+        margin-top: 0px;
+        background-color: black;
+        height: 650px;
+        text-align: center;
+        padding: 200px 12px;
+        background-image: url(https://k46.kn3.net/taringa/9/D/4/2/4/9/luismi222222/337.png);
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+
+    .imgCertificado{
+        margin-top: 20px;
+        width: 340px;
+        height: 290px;
+        position: relative;
+        left: 20px;
+    }
+
+    #somos-proya-acercauno{
+        color: black;
+        padding: 25px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position: center ;
+    }
+    
+}
