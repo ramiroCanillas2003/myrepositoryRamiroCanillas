@@ -1,3 +1,4 @@
+
     html{
         background-color: #000000;
     }
@@ -18,7 +19,7 @@
     p.big{
         font-size: 1.1em;
         line-height: 1.5em;
-        background-color: #640f41;
+        background-color: grey;
         margin: 5px;
         border-radius: 20px;
     }
@@ -27,7 +28,6 @@
         font-size: 2.7em;
         display: block;
         color: black;
-        color: white;
         margin-bottom: 30px;
     }
 
@@ -37,19 +37,17 @@
         padding: 110px 0 110px 0;
         color: white;
         text-align: center;
-        background-image: url(https://i.pinimg.com/originals/81/89/d8/8189d800a0f63b020544e75051bd52c7.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
+        
     }
 
     .info-box h2{
         border-radius: 50px;
         position: relative;
-        left: 430px;
-        width: 400px;
-        background-color: #000000;
+        left: 240px;
+        width: 800px;
+        background-color: violet;
         margin-bottom: 30px;
-        color: #89147d;
+        color: #000000;
     }
 
     #flex-p{
@@ -88,7 +86,7 @@
     }
 
     button:hover{
-        background-color: mediumvioletred;
+        background-color: black;
     }
 
     .container{
@@ -295,6 +293,92 @@
         border-radius: 50px;
     }
 
+
+    /*ULTIMO DIV*/
+    .fond{
+        position:relative;
+        padding-top:85px;
+        top:0;
+        left:0; 
+        right:0;bottom:0;
+        background-color: black;
+    }
+    
+    .carreaux_presentation_light{
+        display:table-cell;
+        width:250px; height:250px;
+        background-size:cover;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carreaux_presentation_light .shadow_swhow_mini{
+        background-color:rgba(19,30,33,0.4);
+        position: absolute;
+        z-index: 1000;
+        top:0;left:0;right:0;bottom:0;
+    }
+
+    .carreaux_presentation_light:hover .shadow_swhow_mini{
+        background-color:#1e4944; 
+        left:0px;
+    }
+
+    .carreaux_presentation_light .deroul_titre{
+        position: relative;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        padding: 7px;
+        z-index: 1000;
+        top:60%;left:-80%;
+        color:#ffffff;
+        font-weight: 300;
+        font-size: 13px; width: 80%;
+        -webkit-transition: all 0.7s;
+        -moz-transition: all 0.7s;
+        -ms-transition: all 0.7s;
+        transition: all 0.7s;
+    }
+    
+    .carreaux_presentation_light:hover .deroul_titre{
+        background-color:#1e4944; left:0px;
+    }
+
+    .carreaux_presentation_light .deroul_soustitre{
+        position: relative;
+        font-family: 'Roboto';
+        padding: 5px;
+        z-index: 1000;
+        top:60%;right:-85%;
+        margin-top: 25px;
+        color:#ffffff;
+        font-weight: 300;
+        font-size: 11px; width: 80%;
+        -webkit-transition: all 0.7s;
+        -moz-transition: all 0.7s;
+        -ms-transition: all 0.7s;
+        transition: all 0.7s;
+    }
+
+    .carreaux_presentation_light:hover .deroul_soustitre{
+        background-color:#417c74;right:0px;
+    }
+
+    .imgLinkedin{
+        margin-top: 5px;
+        width: 70px;
+        height: 70px;
+        border-radius: 20px;
+    }
+
+    .imgGmail{
+        margin-top: 5px;
+        width: 90px;
+        height: 70px;
+        border-radius: 20px;
+    }
+
+    
     /*ICONO WHATSAPP*/
     .float{
         position:fixed;
@@ -321,15 +405,6 @@
     }
 
     /*FOOTER*/
-
-    footer .imgPagina{
-        width: 100px;
-        height: 100px;
-        border-radius: 1000px;
-        margin: 10px;
-        position: relative;
-        left: 580px
-    }
 
     footer p{
         background-color: rgb(0, 0, 0);
@@ -917,7 +992,7 @@
     /*FOOTER*/
 
     footer p{
-        background-color: lightgray;
+        background-color: rgb(0, 0, 0);
         font-size: 1em;
         font-family: Arial, Helvetica, sans-serif;
         height: 40px;
