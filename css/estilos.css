@@ -320,7 +320,7 @@
     }
 
     .carreaux_presentation_light:hover .shadow_swhow_mini{
-        background-color:#1e4944; 
+        background-color: violet; 
         left:0px;
     }
 
@@ -341,7 +341,7 @@
     }
     
     .carreaux_presentation_light:hover .deroul_titre{
-        background-color:#1e4944; left:0px;
+        background-color: grey; left:0px;
     }
 
     .carreaux_presentation_light .deroul_soustitre{
@@ -406,15 +406,32 @@
 
     /*FOOTER*/
 
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+    }
+
     footer p{
-        background-color: rgb(0, 0, 0);
+        margin: 20px;
+        background-color: rgb(255, 255, 255);
         font-size: 1.5em;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        color: white;
+        color: rgb(0, 0, 0);
         height: 40px;
         align-items: center;
         text-align: center;
         align-items: center;
+    }
+
+    footer li{
+        margin: 20px;
+        text-align: center;
+        align-items: center;
+        text-decoration: none;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     /*ESTILOS ACERCA DE..*/
@@ -476,6 +493,7 @@
     }
 
     .imgCerti{
+        margin-bottom: 70px;
         background-color: black;
     }
 
@@ -589,6 +607,19 @@
         color: yellow;
         font-size: 1em;
         margin: 5px;
+    }
+
+    .divImagenes{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 60px;
+    }
+
+    .imagen{
+        width: 200px;
+        height: 200px;
+        border-radius: 40px;
     }
 
     /* MENU NAVEGACION */
@@ -965,14 +996,7 @@
         left: 42px;
     }
     
-    footer .imgPagina{
-        width: 100px;
-        height: 100px;
-        border-radius: 1000px;
-        margin: 10px;
-        position: relative;
-        left: 130px
-    }
+
 
     .logo {
         border-radius: 600px;
@@ -992,7 +1016,7 @@
     /*FOOTER*/
 
     footer p{
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(255, 255, 255);
         font-size: 1em;
         font-family: Arial, Helvetica, sans-serif;
         height: 40px;
@@ -1022,6 +1046,20 @@
         left: 25px;
         padding: 5px;
         font-size: 1.5em;
+    }
+
+    .divImagenes{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 60px;
+    }
+
+    .imagen{
+        width: 200px;
+        height: 200px;
+        border-radius: 40px;
+        margin: 12px;
     }
 
     /*ACERCA DE NOSOTROS*/
