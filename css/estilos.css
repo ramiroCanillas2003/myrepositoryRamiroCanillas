@@ -1,6 +1,9 @@
 
     html{
         background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23565555' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%236b6969' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23282425' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23706f6f' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%236b6a6a' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%23373434' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23484647' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%233a3838' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23232222' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%23292626' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%233d3d3d' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23454545' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
     }
 
     /*ESILOS INDEX*/ 
@@ -74,19 +77,25 @@
     p{font-size: 1.25em;}
     ul{list-style: none;}
 
-    button{
-        font-size: 1.25em;
+    button {
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
         font-weight: bold;
-        padding: 10px 30px;
-        border-radius: 5px;
-        border: 2px solid rgb(255, 255, 255);
-        box-shadow: 2px 2px 10px rgb(255, 178, 178);
-        color: white;
-        background-color: violet;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 20px;
+        border: 2px solid violet;
+        background: violet;
     }
 
-    button:hover{
-        background-color: black;
+    button:hover {
+        background: #fff;
+        color: violet
     }
 
     .container{
@@ -135,20 +144,22 @@
     }
 
     #hero{
+        background: rgba( 1, 0, 0, 0.35 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 0px );
+        -webkit-backdrop-filter: blur( 0px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        height: 50vh;
-        background-position: center center;
-        background-image: url(https://blogs.ua.es/bloggergeek/files/2015/12/programacion-principiantes.jpg);
-        background-size: cover;
-    }
+        }
 
     #hero h1{
-        color: rgb(0, 0, 0);
-        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        background-color: transparent;
         width: 1000px;
         border: black;
         border-radius: 80px;
@@ -302,6 +313,7 @@
         left:0; 
         right:0;bottom:0;
         background-color: black;
+        border-radius: 86px;
     }
     
     .carreaux_presentation_light{
