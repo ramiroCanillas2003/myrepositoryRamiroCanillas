@@ -243,8 +243,8 @@
     }
 
     #nuestros-programasPrecios{
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
+        background-color: transparent;
+        color: rgb(255, 255, 255);
         padding: 15px;
     }
 
@@ -256,10 +256,10 @@
 
     .precios{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color: rgb(255, 255, 255);
+        background-color: transparent;
     }
 
     .titulo-precios{
@@ -268,7 +268,12 @@
         border-radius: 50px;
         width: 260px;
         position: relative;
-        left: 480px;
+        left: 805px;
+    }
+
+    .parrafoPrecios{
+        position: relative;
+        left: 200px;
     }
 
     .enlacePresupuesto{
@@ -868,6 +873,11 @@
         position: relative;
         left: 232px;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .parrafoPrecios{
+        position: relative;
+        left: 5px;
     }
     
     footer .imgPagina{
