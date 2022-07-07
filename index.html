@@ -5,8 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>¡Obtén tu página web!</title>
-    <link rel="stylesheet" href="./css/estilos.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="./css/estilos.css">>
 </head>
 
 <body>
@@ -30,8 +29,6 @@
 
         <!--INDEX HTML-->
 
-        <button class="buttonEmpresa" onClick="alert('Nos dedicamos a brindarte la mejor atención posible, ofreciendote nuestros diseños de sitios web para que puedas difundir tu empresa/emprendiemiento y mejorar.')">¿A qué nos dedicamos?</button>
-
         <header>
             <div class="class-containter">
                 <p class="titulo">Diseños de Sitios Web</p>
@@ -45,7 +42,7 @@
             </div>
         </header>
 
-        
+        <button id="buttonEmpresa" class="buttonEmpresa" onClick="alert('Nos dedicamos a brindarte la mejor atención posible, ofreciendote nuestros diseños de sitios web para que puedas difundir tu empresa/emprendiemiento y mejorar.')">¿A qué nos dedicamos?</button>
 
         <section id="hero">
             <h1>¿Qué se necesita para crear mi sitio web?</h1>
@@ -126,18 +123,21 @@
         <i class="fa fa-whatsapp my-float"></i>
         </a>
         
-        <!--<form name="calc"> 
-            <input type="Text" name="operando1" value="0" size="12"> 
-            <br> 
-            <input type="Text" name="operando2" value="0" size="12"> 
-            <br> 
-            <input type="Button" name="" value=" + " onclick="calcula('+')"> 
-            <input type="Button" name="" value=" - " onclick="calcula('-')"> 
-            <input type="Button" name="" value=" X " onclick="calcula('*')"> 
-            <input type="Button" name="" value=" / " onclick="calcula('/')"> 
-            <br> 
-            <input type="Text" name="resultado" value="0" size="12"> 
-        </form>-->            
+        <nav class="idStorage">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="Nombre" />
+
+            <label for="nombre">Provincia:</label>
+            <input type="text" id="Provincia" />
+
+            <input type="button" onclick="guardarDatos()" value="Guardar datos" />
+            
+            <p id="datos">Pulsa para ver tu Nombre y Apellido y tu Provincia.</p>
+            <input type="button" onclick="recuperarDatos()" value="Recuperar datos" />
+        </nav>
+
+        </div>
+        </div>        
 
         <footer>
             <p>© 2022 | Ramiro Canillas | Mendoza, Argentina</p>
@@ -147,6 +147,8 @@
                     <li><a href="./html/presupuesto.html">Precios y Presupuestos</a></li>
                 </ul>
         </footer>
+        
+        <script src="script.js"></script>
 </body>
 
 </html>

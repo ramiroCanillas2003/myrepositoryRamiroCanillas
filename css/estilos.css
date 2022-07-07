@@ -13,6 +13,22 @@
         margin: 0;
     }
 
+    .idStorage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ejemplo {
+        margin: auto;
+        width: 40%;
+    }
+
+    .ejemplo input {
+        margin: 5px 0 10px 0;
+        display: block;
+    }
+
     *{
         margin: 0px;
         padding: 0 px;
@@ -75,6 +91,28 @@
     h3{font-size: 2em;}
     p{font-size: 1.25em;}
     ul{list-style: none;}
+
+    .buttonEmpresa{
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 20px;
+        border: 2px solid violet;
+        background: violet;
+        left: 860px;
+    }
+
+    .buttonEmpresa:hover{
+        background: #fff;
+        color: violet
+    }
 
     button {
         min-width: 130px;
@@ -311,6 +349,7 @@
 
     /*ULTIMO DIV*/
     .fond{
+        align-items: center;
         position:relative;
         padding-top:85px;
         top:0;
@@ -421,6 +460,8 @@
     }
 
     /*FOOTER*/
+
+    
 
     footer{
         display: flex;

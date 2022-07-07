@@ -98,3 +98,15 @@ button.onclick = function() {
     document.calc.resultado.value = result 
 } */
 
+function guardarDatos() {
+    localStorage.nombre = document.getElementById("Nombre").value;
+    localStorage.provincia = document.getElementById("Provincia").value;
+}
+
+function recuperarDatos() {
+    if ((localStorage.nombre != undefined) && (localStorage.provincia != undefined)) {
+        document.getElementById("datos").innerHTML = "Nombre y Apellido: " + localStorage.nombre + " Provincia: " + localStorage.provincia;
+    } else {
+        document.getElementById("datos").innerHTML = "No has introducido tu nombrey apellido y tu provincia";
+    }
+}
