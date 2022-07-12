@@ -110,3 +110,5 @@ function recuperarDatos() {
         document.getElementById("datos").innerHTML = "No has introducido tu nombrey apellido y tu provincia";
     }
 }
+
+/* CARRITO DE PRESUPUESTO*/ 

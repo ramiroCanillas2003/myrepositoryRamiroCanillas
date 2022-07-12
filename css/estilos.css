@@ -114,6 +114,30 @@
         color: violet
     }
 
+    .buttonEmpresaInput{
+        min-width: 130px;
+        height: 40px;
+        color: #fff;
+        padding: 5px 10px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        outline: none;
+        border-radius: 20px;
+        border: 2px solid violet;
+        background: violet;
+        left: 0px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .buttonEmpresaInput:hover{
+        background: #fff;
+        color: violet
+    }
+
     button {
         min-width: 130px;
         height: 40px;
