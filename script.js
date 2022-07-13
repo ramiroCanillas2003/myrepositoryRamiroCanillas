@@ -100,7 +100,9 @@ button.onclick = function() {
 
 function guardarDatos() {
     localStorage.nombre = document.getElementById("Nombre").value;
-    localStorage.provincia = document.getElementById("Provincia").value;
+    localStorage.apellido = document.getElementById("provincia").value;
+    localStorage.email = document.getElementById("Email").value;
+    localStorage.mensaje = document.getElementById("Mensaje").value;
 }
 
 function recuperarDatos() {
@@ -110,5 +112,7 @@ function recuperarDatos() {
         document.getElementById("datos").innerHTML = "No has introducido tu nombrey apellido y tu provincia";
     }
 }
+
+
 
 /* CARRITO DE PRESUPUESTO*/ 

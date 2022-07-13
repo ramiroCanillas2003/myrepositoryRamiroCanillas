@@ -59,31 +59,43 @@
         </div>
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!---formulario-->
     <form action="" class="form">
-        <h2 class="form__titulo">Contacto</h2>
-        <label for="nombre" class="form__label">Nombre:</label>
-        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" class="form__input">
 
-        <label for="apellido" class="form__label">Apellido:</label>
-        <input type="text" name="apellido" placeholder="Ingrese su apellido" class="form__input">
+        <h3>Contacto:</h3>
+    
+        <nav class="idStorage">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" id="Nombre" />
 
-        <label for="mail" class="form__label">E-mail:</label>
-        <input type="email" name="mail" placeholder="Ingrese su e-mail" class="form__input">
+            <label for="nombre">Provincia:</label>
+            <input type="text" id="Provincia" />
 
-        <div class="form__suscripcion">
-        <label for="info" class="form__label">Por favor, ingrese su consulta a continuación:</label> <input type="checkbox"
-            name="info" class="form__checkbox">
-        </div>
+            <input class="buttonEmpresaInput" type="button" onclick="guardarDatos()" value="Guardar datos" />
+            
+            <p id="datos">Pulsa para ver tu Nombre y Apellido y tu Provincia.</p>
+            <input class="buttonEmpresaInput" type="button" onclick="recuperarDatos()" value="Recuperar datos" />
+        </nav>
 
-        <label for="comentario" class="form__label">Mensaje:</label>
-        <textarea name="comentario" id="" cols="50" rows="10" placeholder="Deja aqui tu mensaje"
-        class="form__textarea"></textarea>
-
-        <button type="button" class="buttonEmpresaContacto">Enviar</button>
     </form>
     <!---fin formulario-->
-    
+
 
     <div class="divImagenes">
         <img class="imagen" src="../multimedia/diseño.jfif" alt="">
@@ -95,6 +107,7 @@
     <a href="https://api.whatsapp.com/send?phone=2615714476&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20presupuestos,%20diseños,%20etcétera%20." class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
     </a>
+
     
     <footer>
         <p>© 2022 | Ramiro Canillas | Mendoza, Argentina</p>
