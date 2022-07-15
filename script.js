@@ -1,5 +1,4 @@
 
-
 alert ("¡Bienvenido/a a nuestra empresa! Por favor, a continuación ingrese lo solicitado:")
 let nombreUsuario = prompt("Ingrese su nombre y apellido:")
 let inicio = confirm( nombreUsuario + "Responda lo siguiente:  ¿Usted acepta términos y condiciones?")
@@ -13,6 +12,8 @@ let masQuejas
 const precio = ["El total es de $20.000", "El total es de $30.000"]
 const tiempo = ["Se demoraría aproximadamente 3 meses", "Se demoraría aproximadamente 4 meses"]
 const otroAsunto = ["¡Esperamos solucionar su duda lo antes posible!"]
+
+
 
 // FECHA
 
