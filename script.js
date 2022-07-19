@@ -1,6 +1,6 @@
 
 
-alert ("¡Bienvenido/a a nuestra empresa! Por favor, a continuación ingrese lo solicitado:")
+/*alert ("¡Bienvenido/a a nuestra empresa! Por favor, a continuación ingrese lo solicitado:")
 let nombreUsuario = prompt("Ingrese su nombre y apellido:")
 let inicio = confirm( nombreUsuario + "Responda lo siguiente:  ¿Usted acepta términos y condiciones?")
 
@@ -70,7 +70,7 @@ if (inicio == true) {
 
 } else {
     alert("¡Veremos que hacemos con sus pedidos! ¡Buena suerte!")
-} 
+}*/
 
 /* DOM */
 
@@ -108,6 +108,31 @@ function recuperarDatos() {
     }
 }
 
-
-
 /* CARRITO DE PRESUPUESTO*/ 
+
+
+/* SWEET ALERT */ 
+
+const btn = document.getElementById('myBtn')
+btn.addEventListener('click', () => {
+
+    Swal.fire({
+        title: 'Genial!',
+        text: 'Haz clickeado el botón!',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+})
+})
+
+/* LUXON */
+
+const dt = DateTime.fromObject(
+    { day: 22, hour: 12, month: 2 },
+    { zone: 'America/Buenos_Aires', numberingSystem: 'beng' }
+)
+
+console.log( dt.toString() )
+// 2022-02-22T12:00:00.000-03:00
+
+/* TOASTIFY */ 
+
